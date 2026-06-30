@@ -65,7 +65,7 @@ Sviluppa un semplice server REST API con Express, connettilo al database mysql e
 - Utenti, Post, Media, Commenti, Likes
 
 # Utenti
- - id
+ - id PK
  - nome
  - cognome
  - data di nascità
@@ -74,30 +74,30 @@ Sviluppa un semplice server REST API con Express, connettilo al database mysql e
 
 
 # Post
-- id 
+- id PK
 - utente
-- utente_id 
+- utente_id FK
 
 
 # Media
-- id 
+- id PK
 - photo 
 - utente_id
 
 
 
 # Commenti
-- id 
+- id PK
 - testo_commento
-- utente_id
-- post_id
+- utente_id FK
+- post_id fk
 
 
 
 # Likes
-- id 
-- utente_id
-- post_id
+- id PK
+- utente_id FK
+- post_id FK
 
 
 
