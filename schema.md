@@ -84,8 +84,6 @@ Sviluppa un semplice server REST API con Express, connettilo al database mysql e
 - photo 
 - utente_id
 
-
-
 # Commenti
 - id PK
 - testo_commento
@@ -150,6 +148,7 @@ WHERE TIMESTAMPDIFF(YEAR, users.birthdate, CURDATE()) BETWEEN 20 AND 30;
 
 
 # 7. Seleziona il numero di post e di media per ogni utente
+
 SELECT * 
 FROM media_post
 JOIN posts ON media_post. post_id = posts.id
